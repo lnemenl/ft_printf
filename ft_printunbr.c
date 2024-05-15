@@ -6,13 +6,13 @@
 /*   By: rkhakimu <rkhakimu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 15:49:22 by rkhakimu          #+#    #+#             */
-/*   Updated: 2024/05/15 09:14:30 by rkhakimu         ###   ########.fr       */
+/*   Updated: 2024/05/13 17:22:37 by rkhakimu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_printunbr(unsigned long n)
+int	ft_printunbr(unsigned int n)
 {
 	int		length;
 	int		retval;

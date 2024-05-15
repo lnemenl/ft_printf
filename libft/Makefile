@@ -6,7 +6,7 @@
 #    By: rkhakimu <rkhakimu@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/30 12:45:23 by rkhakimu          #+#    #+#              #
-#    Updated: 2024/05/02 23:40:37 by rkhakimu         ###   ########.fr        #
+#    Updated: 2024/05/15 10:43:04 by rkhakimu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,12 +61,11 @@ OBJ_bonus = $(SRC_bonus:.c=.o)
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	ar -ruvcs $(NAME) $(OBJ)
+	ar -rcs $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 .bonus_flag: $(NAME) $(OBJ) $(OBJ_bonus)
-	ar -ruvcs $(NAME) $(OBJ_bonus) $(OBJ)
-	ranlib $(NAME)
+	ar -rcs $(NAME) $(OBJ_bonus) $(OBJ)
 	touch .bonus_flag
 
 bonus: .bonus_flag

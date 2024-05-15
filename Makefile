@@ -6,7 +6,7 @@
 #    By: rkhakimu <rkhakimu@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/07 15:13:56 by rkhakimu          #+#    #+#              #
-#    Updated: 2024/05/13 19:01:36 by rkhakimu         ###   ########.fr        #
+#    Updated: 2024/05/15 10:42:28 by rkhakimu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(MAKE) -C $(LIBFTD)
 	cp $(LIBFTD)/libft.a $@
-	ar -ruvc $(NAME) $(OBJ)
+	ar -rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	cc $(FLAGS) -c $^ -o $@ 
