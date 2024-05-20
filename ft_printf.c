@@ -6,7 +6,7 @@
 /*   By: rkhakimu <rkhakimu@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 14:06:33 by rkhakimu          #+#    #+#             */
-/*   Updated: 2024/05/13 18:05:10 by rkhakimu         ###   ########.fr       */
+/*   Updated: 2024/05/20 15:23:33 by rkhakimu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,8 @@ static int	type(const char *format, va_list *arg)
 		i = i + ft_printhex(va_arg(*arg, unsigned int), 1);
 	else if (*format == 'X')
 		i = i + ft_printhex(va_arg(*arg, unsigned int), -1);
+	else if (*format == '%')
+		i = i + ft_printchar('%');
 	return (i);
 }
 
@@ -53,10 +55,9 @@ int	ft_printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			if (ft_strchr("cspdiuxX", *format))
-				retval = type(format, &args);
-			else if (*format == '%')
-				retval = ft_printchar('%');
+			if (*format == '\0')
+				break ;
+			retval = type(format, &args);
 		}
 		else
 			retval = ft_printchar(*format);
