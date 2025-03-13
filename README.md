@@ -94,7 +94,7 @@ Decimal: 42, Hex: 2a, Char: A
 ---
 
 ## License
-This project is part of the 42 school curriculum. You are free to use it for learning purposes, but keep academic integrity in mind if you\'re a fellow student.
+This project is part of the 42 school curriculum. You are free to use it for learning purposes, but keep academic integrity in mind if you're a fellow student.
 
 ---
 
