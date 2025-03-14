@@ -21,7 +21,6 @@ A custom implementation of the `printf` function in C, built as part of the 42 c
   - `%x / %X` — Print a hexadecimal number (lowercase/uppercase)  
   - `%%` — Print a percent sign  
 - Supports a variable number of arguments using `stdarg.h` macros  
-- Built as a static library (`libftprintf.a`)  
 - Fully compatible with `libft` for seamless integration in future projects  
 
 ---
