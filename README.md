@@ -1,10 +1,5 @@
 # ft_printf
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ayogun/42-project-badges/refs/heads/main/covers/cover-ft_printf.png" alt="ft_printf Cover">
-</p>
-<img src="https://img.shields.io/badge/Score-100%2F100-brightgreen" alt="Score Badge">
-
 A custom implementation of the `printf` function in C, built as part of the 42 curriculum.
 
 **`ft_printf`** is a versatile and flexible function that mimics the behavior of the standard C `printf`, handling multiple format specifiers and offering precise control over formatted output.
